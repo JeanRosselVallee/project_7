@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+        <title>ML model API</title>
+    </head>
+    <body>
+       <h1>API du modèle de classification binaire</h1>      
+       <h2>Page de prédiction du modèle</h2> 
+       <p>umap_x = {{features['umap_x']}}</p>
+       <p>umap_y = {{features['umap_y']}}</p>
+       <p>valeur prédite = {{target_value['predictions']}}</p>
+       <a href="/">Retour à l'accueil</a>
+       <a href="/form/">Formulaire</a>
+    </body>
+</html>
+

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+        <title>ML model API</title>
+    </head>
+    <body>
+        <h1>API du modèle de classification binaire</h1>       
+        <h2>Formulaire de saisie d'attributs</h2>       
+        
+        <form method="post" action="{{ url_for('result') }}">
+            <div>
+                <label for="feat1">Feature 1 :</label>
+                <input name="umap_x" id="feat1" type="number" step="any" value="0.3">
+            </div>
+            <div>
+                <label for="feat2">Feature 2 :</label>
+                <input name="umap_y" id="feat2" type="number" step="any" value="0.3">
+            </div>
+            <div>
+                <button>Predict</button>
+            </div>
+        </form>
+      
+    </body>
+</html>
+
