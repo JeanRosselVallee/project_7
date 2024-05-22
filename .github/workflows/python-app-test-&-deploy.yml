@@ -28,7 +28,7 @@ jobs:
     - name: Run Unit Tests                                 # Step N° 5
       run: |
         # pytest option rAll prints outputs of success and failure tests
-        python -m pytest --import-mode=append -rA ./tests/
+        python -m pytest --import-mode=append -rA ./test_api/
     - name: Request Model Deployment to Production server  # Step N° 6
       run: |        
         # runs only if all Unit Tests succeeded
