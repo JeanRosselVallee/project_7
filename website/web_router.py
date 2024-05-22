@@ -26,8 +26,8 @@ def result():
 def deploy():
     import subprocess
     status_phase_1 = '1. Git Pull'
-    dir_tests = '/home/azureuser/git_folder/classifier0/ocr_proj7_ML-model-/tests'
-    shell_command = 'cd ' + dir_tests + ' ; git pull origin main'
+    dir_root = '/home/azureuser/git_folder/project_7/'
+    shell_command = 'cd ' + dir_root + ' ; git pull origin main'
     shell_process = subprocess.run([shell_command], shell=True, capture_output=True, text=True)
     return shell_process.stdout + shell_process.stderr
 
