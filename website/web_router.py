@@ -26,7 +26,7 @@ def result():
 def deploy():
     import subprocess
     status_phase_1 = '1. Git Pull'
-    dir_root = '/home/azureuser/git_folder/project_7/'
+    dir_root = '/home/azureuser/project_7/'
     shell_command = 'cd ' + dir_root + ' ; git pull origin main'
     shell_process = subprocess.run([shell_command], shell=True, capture_output=True, text=True)
     return shell_process.stdout + shell_process.stderr

@@ -30,3 +30,8 @@
 37.174.248.172 - - [22/May/2024 21:33:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 37.174.248.172 - - [22/May/2024 21:33:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 37.174.248.172 - - [22/May/2024 21:33:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+20.109.39.26 - - [22/May/2024 21:56:35] "GET /deploy/ HTTP/1.1" 200 -
+ * Detected change in '/home/azureuser/project_7/website/web_router.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 134-700-135
