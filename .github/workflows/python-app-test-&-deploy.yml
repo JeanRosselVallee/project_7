@@ -28,7 +28,7 @@ jobs:
       run: |
         # pytest option rAll prints outputs of success and failure tests
         python -m pytest --import-mode=append -rA ./test_api/
-    - name: Request Model Deployment to Production server  # Step N° 6
+    - name: Request Deployment to Staging                  # Step N° 6
       run: |        
         # runs only if all Unit Tests succeeded
         curl -X GET 13.92.86.145:6543/deploy_to_staging/ \
