@@ -31,5 +31,5 @@ jobs:
     - name: Request Model Deployment to Production server  # Step N° 6
       run: |        
         # runs only if all Unit Tests succeeded
-        curl -X GET 13.92.86.145:6543/deploy/ \
+        curl -X GET 13.92.86.145:6543/deploy_to_staging/ \
         --no-progress-meter # option to omit progress stats
