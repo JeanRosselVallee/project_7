@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request
 import requests
 import json
+import subprocess
 
 app = Flask(__name__) # get work dirs
 
@@ -23,12 +24,18 @@ def result():
     dict_prediction = json.loads(req_post.text)     #{predictions:[1]}
     return render_template('result.html', port=port, features=dict_features, target_value=dict_prediction)
 
-@app.route('/deploy/')                                    # deploy
-def deploy():
-    import subprocess
-    status_phase_1 = '1. Git Pull'
+@app.route('/deploy_to_staging/')                         # deploy to Staging
+def pull():
+    # Phase_1 Git Pull Model
     dir_root = '/home/azureuser/project_7/'
     shell_command = 'cd ' + dir_root + ' ; git pull origin main'
     shell_process = subprocess.run([shell_command], shell=True, capture_output=True, text=True)
     return shell_process.stdout + shell_process.stderr
-
+def restart():
+    # Phase_2 Restart Model Server
+    port_staging_server = 5677
+    shell_command = 'pkill -f ":' + port_staging_server + '" ;' + \
+        'mlflow models serve -m model/ -p ' + port_staging_server + ' -h 0.0.0.0 --no-conda & ;' + \
+        'ps aux | grep  ":' + port_staging_server + '"'
+    shell_process = subprocess.run(shell_command) 
+    return shell_process.stdout + shell_process.stderr
