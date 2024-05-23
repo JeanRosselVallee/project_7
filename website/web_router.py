@@ -36,7 +36,7 @@ def pull():
 def restart():
     port_staging_server = '5677'
     shell_command = 'pkill -f ":' + port_staging_server + '" ;' + \
-        'mlflow models serve -m model/ -p ' + port_staging_server + ' -h 0.0.0.0 --no-conda & ;' + \
+        'mlflow models serve -m staging_model/ -p ' + port_staging_server + ' -h 0.0.0.0 --no-conda & ;' + \
         'ps aux | grep  ":' + port_staging_server + '"'
     shell_process = subprocess.run(shell_command) 
     return shell_process.stdout + shell_process.stderr
