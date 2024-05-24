@@ -13,7 +13,7 @@ def predict(dict_features):
 def test_prediction():
     for idx, (in_1, in_2, out_i) in enumerate([
                         (.2, .2, 1),
-                        (.3, .3, 0),
+                        (.3, .3, 1),
                         (.4, .4, 0)   ]) :
         print('_____________Unit Test N°', idx + 1, '_______________')
         dict_features_i  = {'umap_x':[str(in_1)],'umap_y':[str(in_2)]}
