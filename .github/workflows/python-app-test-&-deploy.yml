@@ -2,6 +2,7 @@ name: Python application
 on:
   push:                                                    # Trigger = push
     branches: [ "main" ]
+    paths:    [ "api/staging_model/**" ]
 jobs:
   job_build-and-test:                                      # Job N° 1
     runs-on: ubuntu-latest
