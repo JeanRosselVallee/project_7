@@ -22,14 +22,16 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Request Deployment to Staging                  # Step N° 4
-      run: |        
-        # runs only if all Unit Tests succeeded
-        curl -X GET 13.92.86.145:6543/deploy_to_staging/ \
-        --no-progress-meter # option to omit progress stats
+      run: | 
+        curl -X GET 13.92.86.145:6543/deploy_to_staging/ --no-progress-meter
     - name: Install REST requests to access API            # Step N° 5
       run: |
         python -m pip install -r ./test_api/requirements.txt        
-    - name: Run Unit Tests                                 # Step N° 6
+    - name: Run Unit Tests on Staging                      # Step N° 6
       run: |
         # pytest option rAll prints outputs of success and failure tests
         python -m pytest --import-mode=append -rA ./test_api/
+    - name: Request Deployment to Production               # Step N° 7
+      run: |        
+        # runs only if all Unit Tests succeeded
+        curl -X GET 13.92.86.145:6543/deploy_to_production/ --no-progress-meter 
