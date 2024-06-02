@@ -1,25 +1,27 @@
-artifact_path: model
 flavors:
   python_function:
-    data: model.xgb
     env:
       conda: conda.yaml
       virtualenv: python_env.yaml
-    loader_module: mlflow.xgboost
-    python_version: 3.10.12
-  xgboost:
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.19
+  sklearn:
     code: null
-    data: model.xgb
-    model_class: xgboost.sklearn.XGBClassifier
-    model_format: xgb
-    xgb_version: 2.0.3
-mlflow_version: 2.12.2
-model_size_bytes: 101019
-model_uuid: 8739d6adee564a28b55f93a4844dca5f
-run_id: 77852a85b3584b43aee1939dd665b27c
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.2
+mlflow_version: 2.13.1
+model_size_bytes: 1262589
+model_uuid: 7304c71323874dc4ab5dc24fded9528f
 signature:
-  inputs: '[{"type": "double", "name": "umap_x", "required": true}, {"type": "double",
-    "name": "umap_y", "required": true}]'
-  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  inputs: '[{"type": "long", "name": "CODE_GENDER_M", "required": true}, {"type":
+    "long", "name": "NAME_CONTRACT_TYPE_Cash_loans", "required": true}, {"type": "long",
+    "name": "NAME_EDUCATION_TYPE_Lower_secondary", "required": true}, {"type": "double",
+    "name": "EXT_SOURCE_3", "required": true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Higher_education",
+    "required": true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Secondary_or_secondary_special",
+    "required": true}]'
+  outputs: '[{"type": "long", "name": "TARGET", "required": true}]'
   params: null
-utc_time_created: '2024-05-10 15:58:15.009793'
+utc_time_created: '2024-06-02 22:13:18.260551'
