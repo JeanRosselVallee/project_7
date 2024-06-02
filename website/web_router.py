@@ -14,11 +14,11 @@ def pull():
 def restart(str_environment) : 
     if str_environment == 'staging'    : dir_model, port = '../api/staging_model/',    '5677'
     if str_environment == 'production' : dir_model, port = '../api/production_model/', '5678' 
-    str_command_serve = 'mlflow models serve -m ' + dir_model + ' -p ' + port_staging_server + ' -h 0.0.0.0 --no-conda &'
-    str_command_ps = 'ps aux | grep  ":' + port_staging_server + '" | grep -v grep | awk \'{print $2, $15, $19}\' '
+    str_command_serve = 'mlflow models serve -m ' + dir_model + ' -p ' + port + ' -h 0.0.0.0 --no-conda &'
+    str_command_ps = 'ps aux | grep  ":' + port + '" | grep -v grep | awk \'{print $2, $15, $19}\' '
     str_output = 'Process BEFORE Restart:\n'                    # check process BEFORE restart
     str_output += run_shell(str_command_ps)
-    run_shell('pkill -f ":' + port_staging_server + '" ; sleep 1')     # RESTART
+    run_shell('pkill -f ":' + port + '" ; sleep 1')     # RESTART
     subprocess.Popen(str_command_serve, start_new_session=True, shell=True)
     str_output += 'Process AFTER Restart:\n'                    # check process AFTER restart
     str_output += run_shell('sleep 4 ; ' + str_command_ps)
