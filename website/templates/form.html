@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,27 +6,43 @@
         <title>ML model API</title>
     </head>
     <body>
-        <h1>API model of binary classification</h1>       
-        <h2>Form to input features' values</h2>       
+        <h1>API du modèle de classification binaire</h1>       
+        <h2>Formulaire de saisie d'attributs</h2>       
         
         <form method="post" action="{{ url_for('result') }}">
             <div>
-        	<label for="port">Server:</label>
-        	<select id="port" name="port">
-            		<option value="5677"> Staging    </option>
-            		<option value="5678"> Production </option>
-        	</select>
+            	<label for="port">Server:</label>
+            	<select id="port" name="port">
+                		<option value="5677"> Staging    </option>
+                		<option value="5678"> Production </option>
+            	</select>
             </div>
+                <div>
+                    <label for="input_1">CODE_GENDER_M :</label>
+                    <input name="CODE_GENDER_M" id="input_1" type="number" step="any" value="0.3">
+                </div>     
+                <div>
+                    <label for="input_2">NAME_CONTRACT_TYPE_Cash_loans :</label>
+                    <input name="NAME_CONTRACT_TYPE_Cash_loans" id="input_2" type="number" step="any" value="0.3">
+                </div>     
+                <div>
+                    <label for="input_3">NAME_EDUCATION_TYPE_Lower_secondary :</label>
+                    <input name="NAME_EDUCATION_TYPE_Lower_secondary" id="input_3" type="number" step="any" value="0.3">
+                </div>     
+                <div>
+                    <label for="input_4">EXT_SOURCE_3 :</label>
+                    <input name="EXT_SOURCE_3" id="input_4" type="number" step="any" value="0.3">
+                </div>     
+                <div>
+                    <label for="input_5">NAME_EDUCATION_TYPE_Higher_education :</label>
+                    <input name="NAME_EDUCATION_TYPE_Higher_education" id="input_5" type="number" step="any" value="0.3">
+                </div>     
+                <div>
+                    <label for="input_6">NAME_EDUCATION_TYPE_Secondary_or_secondary_special :</label>
+                    <input name="NAME_EDUCATION_TYPE_Secondary_or_secondary_special" id="input_6" type="number" step="any" value="0.3">
+                </div>     
             <div>
-                <label for="feat1"> Feature 1 :</label>
-                <input name="umap_x" id="feat1" type="number" step="any" value="0.3">
-            </div>
-            <div>
-                <label for="feat2"> Feature 2 :</label>
-                <input name="umap_y" id="feat2" type="number" step="any" value="0.3">
-            </div>
-            <div>
-                <button> Predict </button>
+                <button>Predict</button>
             </div>
         </form>
       

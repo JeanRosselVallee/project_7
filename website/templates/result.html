@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,10 +8,15 @@
     <body>
        <h1>API du modèle de classification binaire</h1>      
        <h2>Page de prédiction du modèle</h2> 
-       <p>Prediction Model Server listening at port {{port}}</p>
-       <p>umap_x = {{features['umap_x']}}</p>
-       <p>umap_y = {{features['umap_y']}}</p>
-       <p>valeur prédite = {{target_value['predictions']}}</p>
+       <p>Valeur prédite = {{target_value['predictions']}}</p>
+       <p>Pour les valeurs saisies des attributs suivants :</p>
+ 
+       <p>CODE_GENDER_M = {{features['CODE_GENDER_M']}}</p>       
+       <p>NAME_CONTRACT_TYPE_Cash_loans = {{features['NAME_CONTRACT_TYPE_Cash_loans']}}</p>       
+       <p>NAME_EDUCATION_TYPE_Lower_secondary = {{features['NAME_EDUCATION_TYPE_Lower_secondary']}}</p>       
+       <p>EXT_SOURCE_3 = {{features['EXT_SOURCE_3']}}</p>       
+       <p>NAME_EDUCATION_TYPE_Higher_education = {{features['NAME_EDUCATION_TYPE_Higher_education']}}</p>       
+       <p>NAME_EDUCATION_TYPE_Secondary_or_secondary_special = {{features['NAME_EDUCATION_TYPE_Secondary_or_secondary_special']}}</p>      
        <a href="/">Retour à l'accueil</a>
        <a href="/form/">Formulaire</a>
     </body>
