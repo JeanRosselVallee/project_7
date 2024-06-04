@@ -11,12 +11,10 @@ def predict(dict_features):
     return dict_predicted
 
 def test_prediction():
-    for idx, (in_1, in_2, out_i) in enumerate([
-                        (.2, .2, 1),
-                        (.3, .3, 1),
-                        (.4, .4, 0)   ]) :
-        print('_____________Unit Test N°', idx + 1, '_______________')
-        dict_features_i  = {'umap_x':[str(in_1)],'umap_y':[str(in_2)]}
+    li_dict_features = [{"CODE_GENDER_M":1,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":0,"EXT_SOURCE_3":0.5108529062,"NAME_EDUCATION_TYPE_Higher_education":1,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":0},{"CODE_GENDER_M":0,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":0,"EXT_SOURCE_3":0.7001838507,"NAME_EDUCATION_TYPE_Higher_education":0,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":1},{"CODE_GENDER_M":0,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":0,"EXT_SOURCE_3":0.6832688314,"NAME_EDUCATION_TYPE_Higher_education":1,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":0}]
+    li_targets = [0, 0, 0]
+    for idx, (dict_features_i, out_i) in enumerate(zip(li_dict_features, li_targets)) :
+
         dict_predicted_i = predict(dict_features_i)
         dict_expected_i  = {'predictions':[out_i]}
         print('input features   :', dict_features_i)
@@ -25,3 +23,4 @@ def test_prediction():
 
         # Compare predicted & expected values
         assert dict_predicted_i == dict_expected_i
+
