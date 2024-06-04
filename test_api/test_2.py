@@ -11,8 +11,8 @@ def predict(dict_features):
     return dict_predicted
 
 def test_prediction():
-    li_dict_features = [{"CODE_GENDER_M":1,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":0,"EXT_SOURCE_3":0.5108529062,"NAME_EDUCATION_TYPE_Higher_education":1,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":0},{"CODE_GENDER_M":0,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":0,"EXT_SOURCE_3":0.7001838507,"NAME_EDUCATION_TYPE_Higher_education":0,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":1},{"CODE_GENDER_M":0,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":0,"EXT_SOURCE_3":0.6832688314,"NAME_EDUCATION_TYPE_Higher_education":1,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":0}]
-    li_targets = [0, 0, 0]
+    li_dict_features = [{"CODE_GENDER_M":0,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":1,"EXT_SOURCE_3":0.1359510442,"NAME_EDUCATION_TYPE_Higher_education":0,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":0},{"CODE_GENDER_M":0,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":1,"EXT_SOURCE_3":0.244516392,"NAME_EDUCATION_TYPE_Higher_education":0,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":0},{"CODE_GENDER_M":0,"NAME_CONTRACT_TYPE_Cash_loans":1,"NAME_EDUCATION_TYPE_Lower_secondary":1,"EXT_SOURCE_3":0.2485355573,"NAME_EDUCATION_TYPE_Higher_education":0,"NAME_EDUCATION_TYPE_Secondary_or_secondary_special":0}]
+    li_targets = [1, 1, 1]
     for idx, (dict_features_i, out_i) in enumerate(zip(li_dict_features, li_targets)) :
 
         dict_predicted_i = predict(dict_features_i)

@@ -8,15 +8,30 @@
     <body>
        <h1>API du modèle de classification binaire</h1>      
        <h2>Page de prédiction du modèle</h2> 
-       <p>Valeur prédite = {{target_value['predictions']}}</p>
+       <h3>Valeur prédite = {{target_value['predictions']}}</h3>
        <p>Pour les valeurs saisies des attributs suivants :</p>
+       <table>
  
-       <p>CODE_GENDER_M = {{features['CODE_GENDER_M']}}</p>       
-       <p>NAME_CONTRACT_TYPE_Cash_loans = {{features['NAME_CONTRACT_TYPE_Cash_loans']}}</p>       
-       <p>NAME_EDUCATION_TYPE_Lower_secondary = {{features['NAME_EDUCATION_TYPE_Lower_secondary']}}</p>       
-       <p>EXT_SOURCE_3 = {{features['EXT_SOURCE_3']}}</p>       
-       <p>NAME_EDUCATION_TYPE_Higher_education = {{features['NAME_EDUCATION_TYPE_Higher_education']}}</p>       
-       <p>NAME_EDUCATION_TYPE_Secondary_or_secondary_special = {{features['NAME_EDUCATION_TYPE_Secondary_or_secondary_special']}}</p>      
+            <tr>
+                <td>CODE_GENDER_M</td><td>{{features['CODE_GENDER_M']}}</td>  
+            </tr>      
+            <tr>
+                <td>NAME_CONTRACT_TYPE_Cash_loans</td><td>{{features['NAME_CONTRACT_TYPE_Cash_loans']}}</td>  
+            </tr>      
+            <tr>
+                <td>NAME_EDUCATION_TYPE_Lower_secondary</td><td>{{features['NAME_EDUCATION_TYPE_Lower_secondary']}}</td>  
+            </tr>      
+            <tr>
+                <td>EXT_SOURCE_3</td><td>{{features['EXT_SOURCE_3']}}</td>  
+            </tr>      
+            <tr>
+                <td>NAME_EDUCATION_TYPE_Higher_education</td><td>{{features['NAME_EDUCATION_TYPE_Higher_education']}}</td>  
+            </tr>      
+            <tr>
+                <td>NAME_EDUCATION_TYPE_Secondary_or_secondary_special</td><td>{{features['NAME_EDUCATION_TYPE_Secondary_or_secondary_special']}}</td>  
+            </tr>     
+       </table>
+       <br>
        <a href="/">Retour à l'accueil</a>
        <a href="/form/">Formulaire</a>
     </body>

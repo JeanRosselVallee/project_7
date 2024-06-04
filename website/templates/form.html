@@ -17,35 +17,115 @@
                 		<option value="5678"> Production </option>
             	</select>
             </div>
-                <div>
-                    <label for="input_1">CODE_GENDER_M :</label>
-                    <input name="CODE_GENDER_M" id="input_1" type="number" step="any" value="0.3">
-                </div>     
-                <div>
-                    <label for="input_2">NAME_CONTRACT_TYPE_Cash_loans :</label>
-                    <input name="NAME_CONTRACT_TYPE_Cash_loans" id="input_2" type="number" step="any" value="0.3">
-                </div>     
-                <div>
-                    <label for="input_3">NAME_EDUCATION_TYPE_Lower_secondary :</label>
-                    <input name="NAME_EDUCATION_TYPE_Lower_secondary" id="input_3" type="number" step="any" value="0.3">
-                </div>     
-                <div>
-                    <label for="input_4">EXT_SOURCE_3 :</label>
-                    <input name="EXT_SOURCE_3" id="input_4" type="number" step="any" value="0.3">
-                </div>     
-                <div>
-                    <label for="input_5">NAME_EDUCATION_TYPE_Higher_education :</label>
-                    <input name="NAME_EDUCATION_TYPE_Higher_education" id="input_5" type="number" step="any" value="0.3">
-                </div>     
-                <div>
-                    <label for="input_6">NAME_EDUCATION_TYPE_Secondary_or_secondary_special :</label>
-                    <input name="NAME_EDUCATION_TYPE_Secondary_or_secondary_special" id="input_6" type="number" step="any" value="0.3">
-                </div>     
+            <br>
+            <table> 
+                <tr>
+                    <td><label for="input_1">CODE_GENDER_M :</label></td>
+                    <td><input name="CODE_GENDER_M" id="input_1" type="number" step="any" value="1"></td>
+                    <td>long</td>
+                </tr>     
+                <tr>
+                    <td><label for="input_2">NAME_CONTRACT_TYPE_Cash_loans :</label></td>
+                    <td><input name="NAME_CONTRACT_TYPE_Cash_loans" id="input_2" type="number" step="any" value="1"></td>
+                    <td>long</td>
+                </tr>     
+                <tr>
+                    <td><label for="input_3">NAME_EDUCATION_TYPE_Lower_secondary :</label></td>
+                    <td><input name="NAME_EDUCATION_TYPE_Lower_secondary" id="input_3" type="number" step="any" value="1"></td>
+                    <td>long</td>
+                </tr>     
+                <tr>
+                    <td><label for="input_4">EXT_SOURCE_3 :</label></td>
+                    <td><input name="EXT_SOURCE_3" id="input_4" type="number" step="any" value="1"></td>
+                    <td>double</td>
+                </tr>     
+                <tr>
+                    <td><label for="input_5">NAME_EDUCATION_TYPE_Higher_education :</label></td>
+                    <td><input name="NAME_EDUCATION_TYPE_Higher_education" id="input_5" type="number" step="any" value="1"></td>
+                    <td>long</td>
+                </tr>     
+                <tr>
+                    <td><label for="input_6">NAME_EDUCATION_TYPE_Secondary_or_secondary_special :</label></td>
+                    <td><input name="NAME_EDUCATION_TYPE_Secondary_or_secondary_special" id="input_6" type="number" step="any" value="1"></td>
+                    <td>long</td>
+                </tr>     
+            </table>
+            <br>
             <div>
                 <button>Predict</button>
             </div>
         </form>
-      
+        <br>
+        <p>PI, valeurs des attributs pour obtenir des TP (vrai positif):</p>
+        <table class="dataframe">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th>CODE_GENDER_M</th>
+      <th>NAME_CONTRACT_TYPE_Cash_loans</th>
+      <th>NAME_EDUCATION_TYPE_Lower_secondary</th>
+      <th>EXT_SOURCE_3</th>
+      <th>NAME_EDUCATION_TYPE_Higher_education</th>
+      <th>NAME_EDUCATION_TYPE_Secondary_or_secondary_special</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.1359510442</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.2445163920</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.2485355573</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.0450521147</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.1907059478</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.0839170037</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
     </body>
 </html>
 
