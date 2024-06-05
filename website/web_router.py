@@ -65,4 +65,4 @@ def deploy_production():
     return str_output
 
 @app.route('/report/')                                      # Route Form
-def form(): return render_template('report.html')
+def report(): return render_template('report.html')
