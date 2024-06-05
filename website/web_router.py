@@ -63,3 +63,6 @@ def deploy_production():
     else : 
         str_output += 'ERROR: Model could NOT be copied'
     return str_output
+
+@app.route('/report/')                                      # Route Form
+def form(): return render_template('report.html')
