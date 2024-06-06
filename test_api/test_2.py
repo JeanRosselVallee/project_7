@@ -3,7 +3,7 @@ import json
 
 def predict(dict_features):
     # Send input data to prediction API
-    req_post = requests.post(   url     = 'http://4.233.201.217/:5677/invocations',
+    req_post = requests.post(   url     = 'http://4.233.201.217:5677/invocations',
                                 headers = {'Content-Type': 'application/json'},
                                 data    = json.dumps({'inputs': dict_features}) )
     # Get predicted value from API

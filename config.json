@@ -1,8 +1,8 @@
 {
-user:jvisa4031,
-ip_host:4.233.201.217,
-port_staging:5677,
-port_production:5678,
-port_jupyter:5555,
-port_flask:6543,
+"user":"jvisa4031",
+"ip_host":"4.233.201.217",
+"port_staging":"5677",
+"port_production":"5678",
+"port_jupyter":"5555",
+"port_flask":"6543"
 }
