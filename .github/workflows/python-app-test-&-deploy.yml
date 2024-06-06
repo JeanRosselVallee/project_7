@@ -24,8 +24,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Request Deployment to Staging                  # Step N° 4
       run: | 
-        ip_staging=`  awk -F: "/ip_host/{     print $2}" config.json | tr -d ","`  
-        port_staging=`awk -F: "/port_staging/{print $2}" config.json | tr -d ","`  
+        ip_staging=$(  awk -F: '/ip_host/{     print $2}' config.json | tr -d ",")  
+        port_staging=$(awk -F: '/port_staging/{print $2}' config.json | tr -d ",")  
         url_staging=$ip_staging:$port_staging
         curl -X GET $url_staging/deploy_to_staging/ --no-progress-meter
     - name: Install REST requests to access API            # Step N° 5
@@ -38,7 +38,7 @@ jobs:
     - name: Request Deployment to Production               # Step N° 7
       run: |        
         # runs only if all Unit Tests succeeded
-        ip_production=`  awk -F: "/ip_host/{        print $2}" config.json | tr -d ","`  
-        port_production=`awk -F: "/port_production/{print $2}" config.json | tr -d ","`  
+        ip_production=$(  awk -F: '/ip_host/{        print $2}' config.json | tr -d ",")
+        port_production=$(awk -F: '/port_production/{print $2}' config.json | tr -d ",") 
         url_production=$ip_production:$port_production
         curl -X GET $url_production/deploy_to_production/ --no-progress-meter 
