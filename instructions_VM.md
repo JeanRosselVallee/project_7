@@ -4,6 +4,7 @@
 
 ### Create a VM
   - [_Use the Azure CLI to create a Linux VM | Microsoft Learn_](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli)
+  - Choose Standard D4s_v3 (4CPU 16Gb)
 ### Access CLI Terminal
   - [_Azure CLI_](https://shell.azure.com/bash)
 
@@ -19,37 +20,29 @@ wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1EPC
 ```
 ## Azure CLI Terminal
 
-### SSH Tunnels
-```
-# Jupyter
-ssh -N -L 5555:localhost:5555 jvisa4031@20.199.23.162 &
-
-ssh -N -L 5678:localhost:5678 azureuser@20.199.23.162
-```
-
-
 ### Access VM
 ```
-ssh azureuser@13.92.86.145
-ssh jvisa4031@20.199.23.162
+ssh jvisa4031@4.233.201.217
 ```
 
 ## VM (Virtual Machine)
 
 ### Installation de Python
 Cf. _§Python install_ in [_How to Setup MLflow On Azure | Medium_](https://medium.com/swlh/how-to-setup-mlflow-on-azure-5ba67c178e7d)
-
+```
+sudo apt update
 python3 --version
 sudo apt install python3-pip
 pip install virtualenv
-history
 sudo apt install python3.10-venv
-
+# sudo apt install sqlite         # for jupyter history
+```
 ### Create Inbound port rule
 [myVM063b54 - Microsoft Azure](https://portal.azure.com/#@jvisa4031gmail.onmicrosoft.com/resource/subscriptions/a49ee12c-d832-486e-97d4-f71b6df0169e/resourceGroups/myVMResourceGroup063b54/providers/Microsoft.Compute/virtualMachines/myVM063b54/networkSettings)
 
 ### Check open ports
 ```
+sudo apt install net-tools
 netstat -tunlp | grep "0:[56]"
 ```
 
@@ -58,8 +51,8 @@ netstat -tunlp | grep "0:[56]"
 mkdir environments_folder/
 cd environments_folder
 sudo apt-get update
-sudo apt install python3-pip
-sudo apt install python3.8-venv
+# sudo apt install python3-pip
+sudo apt install python3-venv
 python3 -m venv my_env
 ```
 
@@ -70,18 +63,32 @@ source ~/environments_folder/my_env/bin/activate
 
 ## Python Virtual Environment
 
-### Install Jupyter
+### Notebook Jupyter
+
+#### Install 
 ```
 pip3 install jupyter
 pip3 install ipykernel
 ipython kernel install --user --name=my_env
 ```
 
-### Launch Jupyter
+#### Launch 
 ```
-cd project_7/
 jupyter notebook --no-browser  --ip=0.0.0.0 --port=5555 &
 ps aux | grep "jupyter" | grep -v "grep"
+```
+
+#### Access online
+On Browser
+- First connection :http://4.233.201.217:5555/tree?token=####
+- [List of notebooks](http://4.233.201.217:5555/tree)
+
+### SSH Tunnels
+```
+# Jupyter
+nohup ssh -N -L 5555:localhost:5555 jvisa4031@4.233.201.217 &
+# Flask webapp
+nohup ssh -N -L 6543:localhost:6543 jvisa4031@4.233.201.217 &
 ```
 
 ## Git
@@ -98,6 +105,7 @@ git config --global user.email "jv.isa4031@gmail.com"
 git config --global user.name "JeanRosselVallee"
 git remote rm origin
 git remote add origin https://JeanRosselVallee:github_pat_####@github.com/JeanRosselVallee/project_7.git
+git remote -v
 ```
 
 ### Publish
@@ -110,24 +118,16 @@ git commit -m "Commit message"
 git push origin main
 ```
 
-## Notebook Jupyter
-
-### Access online
-```
-http://VirtualMachine001:5555/tree?token=7a8a3c0203afe846f6571e297bbf3321ba819986f7845ee0
 ```
 
 ### 
 ```
-```
+
 
 ### Open port
-...
 
-### Access online
-On Browser
-- [Firrst connection](http://13.92.86.145:5555/?token=53f2bdd1110cb7c5e75e2fb9839af8ef755ad905d40deb82)
-- [List of notebooks](http://13.92.86.145:5555/tree)
+
+
 
 ## Ngrok
 In a Notebook : 
