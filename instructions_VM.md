@@ -19,15 +19,19 @@ wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1EPC
 ```
 ## Azure CLI Terminal
 
-### SSH Tunnel
+### SSH Tunnels
 ```
-ssh -N -L 5678:localhost:5678 azureuser@13.92.86.145
+# Jupyter
+ssh -N -L 5555:localhost:5555 jvisa4031@20.199.23.162 &
+
+ssh -N -L 5678:localhost:5678 azureuser@20.199.23.162
 ```
 
 
 ### Access VM
 ```
 ssh azureuser@13.92.86.145
+ssh jvisa4031@20.199.23.162
 ```
 
 ## VM (Virtual Machine)
@@ -48,37 +52,73 @@ sudo apt install python3.10-venv
 ```
 netstat -tunlp | grep "0:[56]"
 ```
+
+### Create Virtual Environment
+```
+mkdir environments_folder/
+cd environments_folder
+sudo apt-get update
+sudo apt install python3-pip
+sudo apt install python3.8-venv
+python3 -m venv my_env
+```
+
 ### Access Virtual Environment
 ```
 source ~/environments_folder/my_env/bin/activate
 ```
 
 ## Python Virtual Environment
-On VM -> V-Env
+
+### Install Jupyter
 ```
-source ~/environments_folder/my_env/bin/activate
+pip3 install jupyter
+pip3 install ipykernel
+ipython kernel install --user --name=my_env
+```
+
+### Launch Jupyter
+```
+cd project_7/
+jupyter notebook --no-browser  --ip=0.0.0.0 --port=5555 &
+ps aux | grep "jupyter" | grep -v "grep"
 ```
 
 ## Git
 
-sudo apt-get install git
+### Clone project
+```
+git clone https://github.com/JeanRosselVallee/project_7
+```
+
+### Configuration
+```
+cd ./project_7/
+git config --global user.email "jv.isa4031@gmail.com" 
+git config --global user.name "JeanRosselVallee"
+git remote rm origin
+git remote add origin https://JeanRosselVallee:github_pat_####@github.com/JeanRosselVallee/project_7.git
+```
+
+### Publish
+```
+cd ./project_7/
+git pull origin main
+git status
+git add .
+git commit -m "Commit message"
+git push origin main
+```
 
 ## Notebook Jupyter
 
-### Install
-...
-
-### Launch
-On V-Env
+### Access online
 ```
-jupyter notebook --no-browser  --ip=0.0.0.0 --port=5555 &
-ps aux | grep jupyter
+http://VirtualMachine001:5555/tree?token=7a8a3c0203afe846f6571e297bbf3321ba819986f7845ee0
 ```
 
-### Tunnel SSH
-On CLI
+### 
 ```
-ssh -N -L 5555:localhost:5555 azureuser@13.92.86.145
 ```
 
 ### Open port
