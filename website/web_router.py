@@ -39,12 +39,12 @@ def form(): return render_template('form.html')
 
 @app.route('/result/', methods=['POST'])                  # Route Result (API prediction)
 def result():    
-    dict_features = request.form.to_dict(flat=False) #{port:[5678],umap_x:[.3],umap_y:[.3]}
+    dict_features = request.form.to_dict(flat=False)      #{port:[...],feature:[value],...}
     port = dict_features.pop('port')[0]
     req_post = requests.post(   url     = 'http://localhost:' + str(port) + '/invocations', 
                                 headers = {'Content-Type': 'application/json'}, 
                                 data    = json.dumps({'inputs': dict_features}) )
-    dict_prediction = json.loads(req_post.text)     #{predictions:[1]}
+    dict_prediction = json.loads(req_post.text)           # {predictions:[1]}
     return render_template('result.html', port=port, features=dict_features, target_value=dict_prediction)
 
 @app.route('/deploy_to_staging/')                         # Deploys to Staging
@@ -64,5 +64,8 @@ def deploy_production():
         str_output += 'ERROR: Model could NOT be copied'
     return str_output
 
-@app.route('/report/')                                      # Route Form
+@app.route('/report/')                                      # Route Report
 def report(): return render_template('report.html')
+
+@app.route('/report_simul/')                                # Route Report Simulation
+def report_simul(): return render_template('report_simulation.html')
