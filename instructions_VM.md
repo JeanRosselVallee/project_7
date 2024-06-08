@@ -118,11 +118,42 @@ git commit -m "Commit message"
 git push origin main
 ```
 
-```
+## SMTP mail
+Send alerts from VM to : jv.virtualm@gmail.com
 
-### 
-```
+### Instructions 
+Cf. [Configure Postfix to Send Email with Gmail's SMTP From the Terminal](https://dev.to/chigozieco/configure-postfix-to-send-email-with-gmails-smtp-from-the-terminal-4cco)
 
+### Configure G-Account
+- Create app password at App Passwords 
+- App name = SendAlert
+
+### Install postfix
+- system mail name FQDN : VM01.zythql44tdxu1oosyti1qz3pfa.parx.internal.cloudapp.net
+- contents of  /etc/postfix/sasl/sasl_passwd :
+  - [smtp.gmail.com]:465 jv.virtualm@gmail.com:davi ugnz tjlm cjij
+- certificate exists : /etc/ssl/certs/ca-certificates.crt
+- correction : sudo ufw allow "postfix SMTP"
+
+### SHELL Commands
+```
+sudo apt install mailutils
+sudo vi /etc/postfix/sasl/sasl_passwd
+cat /etc/postfix/sasl/sasl_passwd
+sudo postmap /etc/postfix/sasl/sasl_passwd
+sudo chmod 600 /etc/postfix/sasl/sasl_passwd /etc/postfix/sasl/sasl_passwd.db
+sudo vi /etc/postfix/main.cf
+ls /etc/ssl/certs/ca-certificates.crt
+sudo systemctl restart postfix
+sudo ufw status
+sudo ufw allow "Postfix"
+sudo ufw allow "postfix SMTPS"
+sudo ufw allow "Postfix Submission"
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+nohup ssh -N -L 465:localhost:465 jvisa4031@4.233.201.217 &
+ps aux | grep ssh | grep 465
+netstat tuln | grep 465
+```
 
 ### Open port
 
