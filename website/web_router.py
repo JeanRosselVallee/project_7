@@ -2,11 +2,14 @@ from flask import Flask, render_template, request
 import requests
 import json
 import subprocess
+import pandas as pd
+from mlflow import sklearn as skl
+from sklearn.metrics import roc_auc_score
  
-def run_shell(command):
+def run_shell(command) :
     shell_process = subprocess.run([command], shell=True, capture_output=True, text=True)
     return str(shell_process.stdout) + str(shell_process.stderr)
-def pull():
+def pull() :
     dir_root = '/home/azureuser/project_7/'
     str_command_pull = 'cd ' + dir_root + ' ; git pull origin main'
     str_output = run_shell(str_command_pull)
@@ -23,7 +26,7 @@ def restart(str_environment) :
     str_output += 'Process AFTER Restart:\n'                    # check process AFTER restart
     str_output += run_shell('sleep 4 ; ' + str_command_ps)
     return 'Restart Server:===============\n' + str_output
-def copy_model():
+def copy_model() :
     str_command_cp = 'cp -rf ../api/staging_model/* ../api/production_model/ ; echo $?'
     str_output = run_shell(str_command_cp)
     return str_output
@@ -32,13 +35,13 @@ def copy_model():
 app = Flask(__name__)                                     
 
 @app.route('/')                                           # Route Index
-def index(): return render_template('index.html')         # renders HTML as string
+def index() : return render_template('index.html')         # renders HTML as string
 
 @app.route('/form/')                                      # Route Form
-def form(): return render_template('form.html')
+def form() : return render_template('form.html')
 
 @app.route('/result/', methods=['POST'])                  # Route Result (API prediction)
-def result():    
+def result() : 
     dict_features = request.form.to_dict(flat=False)      #{port:[...],feature:[value],...}
     port = dict_features.pop('port')[0]
     req_post = requests.post(   url     = 'http://localhost:' + str(port) + '/invocations', 
@@ -48,13 +51,13 @@ def result():
     return render_template('result.html', port=port, features=dict_features, target_value=dict_prediction)
 
 @app.route('/deploy_to_staging/')                         # Deploys to Staging
-def deploy_staging():
+def deploy_staging() :
     str_output  = pull()                                        # phase_1 git pull model
     str_output += restart('staging')                            # phase_2 restart model server
     return str_output
 
 @app.route('/deploy_to_production/')                      # Deploys to Production
-def deploy_production():
+def deploy_production() :
     str_output  = 'Copy Model from Staging to Production:===================\n' 
     str_return_code = copy_model()                              # phase_1 copy model
     if str_return_code == '0\n' :
@@ -64,8 +67,21 @@ def deploy_production():
         str_output += 'ERROR: Model could NOT be copied'
     return str_output
 
-@app.route('/report/')                                      # Route Report
-def report(): return render_template('report.html')
+@app.route('/report/')                                    # Route Report
+def report() : return render_template('report.html')
 
-@app.route('/report_simul/')                                # Route Report Simulation
-def report_simul(): return render_template('report_simulation.html')
+@app.route('/report_simul/')                              # Route Report Simulation
+def report_simul() : return render_template('report_simulation.html')
+
+@app.route('/alert_score/', methods=['POST'])             # Route Alert Low Score
+def alert_score() :     
+    data = request.json
+    df_out = pd.DataFrame(data['dataframe_split']['data'], columns=data['dataframe_split']['columns'])
+    ser_y = df_out['target']
+    df_model_input = df_out.copy()
+    df_model_input.pop('target')
+    model = skl.load_model(model_uri='../api/staging_model/')
+    np_y_pred = model.predict(df_model_input)
+    df_out['prediction'] = pd.Series(np_y_pred)
+    score = roc_auc_score(ser_y, np_y_pred)
+    return 'roc_auc_score=' + str(score)

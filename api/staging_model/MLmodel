@@ -13,8 +13,8 @@ flavors:
     serialization_format: cloudpickle
     sklearn_version: 1.3.2
 mlflow_version: 2.13.1
-model_size_bytes: 1264527
-model_uuid: e6535787323c4190bb948f6a23728647
+model_size_bytes: 1264320
+model_uuid: 356f7c99490f442fa06bff18f65c4f9e
 signature:
   inputs: '[{"type": "long", "name": "CODE_GENDER_M", "required": true}, {"type":
     "long", "name": "NAME_CONTRACT_TYPE_Cash_loans", "required": true}, {"type": "long",
@@ -24,4 +24,4 @@ signature:
     "required": true}]'
   outputs: '[{"type": "long", "name": "TARGET", "required": true}]'
   params: null
-utc_time_created: '2024-06-08 14:50:46.561704'
+utc_time_created: '2024-06-09 21:31:21.734670'
