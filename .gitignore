@@ -4,5 +4,5 @@
 production_model
 .github/workflows
 file_editor.ipynb
-config_secret.json
+config_private.json
 nohup.out
