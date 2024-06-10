@@ -74,7 +74,7 @@ ipython kernel install --user --name=my_env
 
 #### Launch 
 ```
-jupyter notebook --no-browser  --ip=0.0.0.0 --port=5555 &
+nohup jupyter notebook --no-browser  --ip=0.0.0.0 --port=5555 &
 ps aux | grep "jupyter" | grep -v "grep"
 ```
 
@@ -153,6 +153,9 @@ export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 nohup ssh -N -L 465:localhost:465 jvisa4031@4.233.201.217 &
 ps aux | grep ssh | grep 465
 netstat tuln | grep 465
+sudo vi ~/.bashrc
+source ~/.bashrc
+echo "ML Model - score decreased" | mailx -s "Model performance decay" jv.virtualm@gmail.com
 ```
 
 ### Open ports
