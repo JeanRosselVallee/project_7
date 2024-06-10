@@ -1,11 +1,12 @@
-from flask import Flask, render_template, request
-import requests
+import pandas as pd
 import json
 import subprocess
-import pandas as pd
+import requests
+from flask import Flask, render_template, request
 from mlflow import sklearn as skl
-from sklearn.metrics import roc_auc_score
- 
+from sklearn.metrics import recall_score, roc_auc_score
+
+# **************************************************** FUNCTIONS ************************
 def run_shell(command) :
     shell_process = subprocess.run([command], shell=True, capture_output=True, text=True)
     return str(shell_process.stdout) + str(shell_process.stderr)
@@ -30,10 +31,13 @@ def copy_model() :
     str_command_cp = 'cp -rf ../api/staging_model/* ../api/production_model/ ; echo $?'
     str_output = run_shell(str_command_cp)
     return str_output
+def send_email(str_body) :
+    shell_command = 'echo "' + str_body + '" | mailx -s "Model Performance Decay" jv.virtualm@gmail.com'
+    subprocess.getoutput(shell_command)
 
-# WebApp Router
+# **************************************************** FLASK APP *********************
 app = Flask(__name__)                                     
-
+# **************************************************** ROUTES ************************
 @app.route('/')                                           # Route Index
 def index() : return render_template('index.html')         # renders HTML as string
 
@@ -74,14 +78,21 @@ def report() : return render_template('report.html')
 def report_simul() : return render_template('report_simulation.html')
 
 @app.route('/alert_score/', methods=['POST'])             # Route Alert Low Score
-def alert_score() :     
-    data = request.json
-    df_out = pd.DataFrame(data['dataframe_split']['data'], columns=data['dataframe_split']['columns'])
-    ser_y = df_out['target']
-    df_model_input = df_out.copy()
-    df_model_input.pop('target')
-    model = skl.load_model(model_uri='../api/staging_model/')
-    np_y_pred = model.predict(df_model_input)
-    df_out['prediction'] = pd.Series(np_y_pred)
-    score = roc_auc_score(ser_y, np_y_pred)
-    return 'roc_auc_score=' + str(score)
+def alert_score() :    
+    alert_threshold = 0.6
+    dict_response = request.json                                 # Data extraction
+    df_X = pd.DataFrame(data    = dict_response['dataframe_split']['data'], 
+                        columns = dict_response['dataframe_split']['columns'])
+    ser_y = df_X.pop('target')                                   # Prediction
+    model = skl.load_model(model_uri='../api/production_model/')
+    np_y_pred = model.predict(df_X, bool_save_events=False)
+    df_X['target'] = ser_y
+    df_X['prediction'] = pd.Series(np_y_pred)
+    df_X.to_csv('../modeling/data/out/api_observations.csv')     # Backup
+    
+    score_auc    = roc_auc_score(ser_y, np_y_pred)               # Score
+    score_recall = recall_score( ser_y, np_y_pred) 
+    str_score = 'Score AUC   = ' + str(score_auc.round(4))
+    if score_auc < alert_threshold : 
+        send_email('alert_score(): ' + str_score)
+    return str_score + '\nScore Recall= ' + str(score_recall.round(4))
