@@ -1,10 +1,12 @@
 ## MS Azure
 ### Cost Analysis
-- [Custom: Cost analysis - Microsoft Azure](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/CostAnalysis/scope/%2Fproviders%2FMicrosoft.Billing%2FbillingAccounts%2F688e2018-b916-5441-11ec-c59b7772b9e9%3A395c7ee6-4f61-4267-9133-62fa7b59675a_2019-05-31/isAcmContext~/true/viewId/%2Fproviders%2FMicrosoft.Billing%2FbillingAccounts%2F688e2018-b916-5441-11ec-c59b7772b9e9%3A395c7ee6-4f61-4267-9133-62fa7b59675a_2019-05-31%2Fproviders%2FMicrosoft.CostManagement%2Fviews%2Fms%3ADailyCosts/openByNewTab~/true)
+- [Custom: Cost analysis - Microsoft Azure](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis/openedBy/AzurePortal)
 
 ### Create a VM
   - [_Use the Azure CLI to create a Linux VM | Microsoft Learn_](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-cli)
   - Choose Standard D4s_v3 (4CPU 16Gb)
+  - A Data disk is optional. Needs to be attached to the VM
+
 ### Access CLI Terminal
   - [_Azure CLI_](https://shell.azure.com/bash)
 
@@ -117,6 +119,23 @@ git add .
 git commit -m "Commit message"
 git push origin main
 ```
+
+### Cancel changes in specified files
+```
+git checkout -- <file1> <file2> 
+```
+
+### Cancel add & commit
+HEAD\~1 = Pointer to commit N-1
+```
+git reset HEAD~1 
+```
+### See changes in working file 
+```
+git diff HEAD           <file>         # compares to local  repository
+git diff origin/main -- <file>         # compares to remote repository
+```
+'@@ -M,N +P,Q @@' means old block starts at line M & has N lines, while new starts at P & has Q lines
 
 ## SMTP mail
 Send alerts from VM to : jv.virtualm@gmail.com

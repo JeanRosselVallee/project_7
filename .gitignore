@@ -1,8 +1,10 @@
 .ipynb_checkpoints
 */__pycache__
 *.log
+*.zip
 production_model
 .github/workflows
 file_editor.ipynb
 config_private.json
 nohup.out
+*train_smote.csv
