@@ -7,4 +7,4 @@ production_model
 file_editor.ipynb
 config_private.json
 nohup.out
-*train_smote.csv
+*_smote.csv
