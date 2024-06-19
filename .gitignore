@@ -3,8 +3,13 @@
 *.log
 *.zip
 production_model
+catboost_info
+data/in
+*train*.csv
+*test*.csv
 .github/workflows
 file_editor.ipynb
 config_private.json
 nohup.out
 *_smote.csv
+
