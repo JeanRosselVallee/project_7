@@ -4,9 +4,9 @@
 *.zip
 production_model
 catboost_info
-data/in
-*train*.csv
-*test*.csv
+modeling/data/in
+modeling/data/out/*train*.csv
+*_test_2.csv
 .github/workflows
 file_editor.ipynb
 config_private.json
