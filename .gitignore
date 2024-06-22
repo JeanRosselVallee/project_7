@@ -7,6 +7,7 @@ catboost_info
 modeling/data/in
 modeling/data/out/*train*.csv
 *_test_2.csv
+*_1.csv
 .github/workflows
 file_editor.ipynb
 config_private.json
