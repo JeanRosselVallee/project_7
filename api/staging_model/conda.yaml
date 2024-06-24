@@ -6,13 +6,11 @@ dependencies:
 - pip:
   - mlflow==2.14.1
   - cloudpickle==3.0.0
-  - joblib==1.4.2
   - numpy==1.26.4
   - packaging==23.2
   - pandas==2.2.2
   - pyyaml==6.0.1
   - scikit-learn==1.5.0
   - scipy==1.13.1
-  - threadpoolctl==3.5.0
   - xgboost==2.1.0
 name: mlflow-env
