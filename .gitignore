@@ -4,13 +4,10 @@
 *.zip
 production_model
 catboost_info
+modeling/data/out/[Xy]**.csv
 modeling/data/in
-modeling/data/out/*train*.csv
-*_test_2.csv
-*_1.csv
 .github/workflows
 file_editor.ipynb
 config_private.json
 nohup.out
-*_smote.csv
-
+modeling/mlruns/0
