@@ -4,7 +4,7 @@
 *.zip
 production_model
 catboost_info
-modeling/data/out/[Xy]**.csv
+modeling/data/out/*[1-4].csv
 modeling/data/in
 .github/workflows
 file_editor.ipynb
