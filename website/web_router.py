@@ -84,11 +84,14 @@ def alert_score() :
     df_X = pd.DataFrame(data    = dict_response['dataframe_split']['data'], 
                         columns = dict_response['dataframe_split']['columns'])
     ser_y = df_X.pop('target')                                   # Prediction
-    model = skl.load_model(model_uri='../api/production_model/')
+    server = dict_response['server']  # staging or production
+    # model = skl.load_model(model_uri='../api/production_model/')
+    model = skl.load_model(model_uri='../api/' + server + '_model/')
     np_y_pred = model.predict(df_X, bool_save_events=False)
     df_X['target'] = ser_y
     df_X['prediction'] = pd.Series(np_y_pred)
-    df_X.to_csv('../modeling/data/out/api_observations.csv')     # Backup
+    df_X.to_csv ('../modeling/data/out/api_observations.csv')     # Backup    
+    df_X.to_html('../website/templates/api_observations.html')
     
     score_auc    = roc_auc_score(ser_y, np_y_pred)               # Score
     score_recall = recall_score( ser_y, np_y_pred) 
@@ -96,3 +99,7 @@ def alert_score() :
     if score_auc < alert_threshold : 
         send_email('alert_score(): ' + str_score)
     return str_score + '\nScore Recall= ' + str(score_recall.round(4))
+    
+@app.route('/backup/')                                     # Route View Backup
+def backup_csv() : 
+    return render_template('api_observations.html')

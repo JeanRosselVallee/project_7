@@ -1,1 +1,1 @@
-[long, long, long, double, long, long]
+[long, double, double, long, long, long, long]
