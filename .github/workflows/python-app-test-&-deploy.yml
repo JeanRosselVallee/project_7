@@ -27,6 +27,7 @@ jobs:
         ip_webapp=$(  awk -F: '/ip_host/{   print $2}' config.json)  
         port_webapp=$(awk -F: '/port_flask/{print $2}' config.json)  
         url_webapp=$(echo $ip_webapp:$port_webapp | tr -d '"' | tr -d ',')
+        echo "url_webapp=$url_webapp"
         curl -X GET $url_webapp/deploy_to_staging/ --no-progress-meter
     - name: Install REST requests to access API            # Step N° 5
       run: |
