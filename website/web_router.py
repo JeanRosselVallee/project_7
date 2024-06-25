@@ -11,7 +11,7 @@ def run_shell(command) :
     shell_process = subprocess.run([command], shell=True, capture_output=True, text=True)
     return str(shell_process.stdout) + str(shell_process.stderr)
 def pull() :
-    dir_root = '/home/azureuser/project_7/'
+    dir_root = '../'
     str_command_pull = 'cd ' + dir_root + ' ; git pull origin main'
     str_output = run_shell(str_command_pull)
     return 'Git Pull Model:===============\n' + str_output

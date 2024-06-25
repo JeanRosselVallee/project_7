@@ -11,3 +11,4 @@ file_editor.ipynb
 config_private.json
 nohup.out
 modeling/mlruns/0
+test_api/mlruns/
