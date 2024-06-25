@@ -1,6 +1,7 @@
 name: Python application
 on:
-  push:                                                    # Trigger = push
+  workflow_dispatch:                                    # Trigger = manual 
+  push:                                                 # Trigger = push
     branches: [ "main" ]
     paths:    [ "api/staging_model/**" ]
 jobs:
