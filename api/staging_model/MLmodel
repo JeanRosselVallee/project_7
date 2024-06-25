@@ -14,7 +14,7 @@ flavors:
     sklearn_version: 1.5.0
 mlflow_version: 2.14.1
 model_size_bytes: 236915
-model_uuid: 0d017ded9e4249aa9ef624a64c0a8faa
+model_uuid: ce686ba4b1b748ca92638bc6996287fb
 signature:
   inputs: '[{"type": "long", "name": "NAME_EDUCATION_TYPE_Higher_education", "required":
     true}, {"type": "double", "name": "EXT_SOURCE_3", "required": true}, {"type":
@@ -24,4 +24,4 @@ signature:
     true}, {"type": "long", "name": "NAME_INCOME_TYPE_Working", "required": true}]'
   outputs: '[{"type": "long", "name": "TARGET", "required": true}]'
   params: null
-utc_time_created: '2024-06-24 17:30:32.609542'
+utc_time_created: '2024-06-25 14:29:39.362988'
