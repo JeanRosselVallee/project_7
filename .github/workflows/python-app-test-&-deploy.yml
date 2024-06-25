@@ -30,8 +30,6 @@ jobs:
           }
         ip_webapp=$( get_config_value ip_host )
         port_webapp=$( get_config_value port_flask )
-        #ip_webapp=$(  awk -F'"' '/ip_host/{   print $4}' config.json)
-        #port_webapp=$(awk -F'"' '/port_flask/{print $4}' config.json)
         url_webapp=$(echo $ip_webapp:$port_webapp)
         echo "url_webapp=$url_webapp"
         curl -X GET $url_webapp/deploy_to_staging/ --no-progress-meter
@@ -50,7 +48,5 @@ jobs:
           }
         ip_webapp=$( get_config_value ip_host )
         port_webapp=$( get_config_value port_flask )
-        #ip_webapp=$(  awk -F: '/ip_host/{   print $2}' config.json)
-        #port_webapp=$(awk -F: '/port_flask/{print $2}' config.json)   
         url_webapp=$(echo $ip_webapp:$port_webapp | tr -d '"' | tr -d ',')
         curl -X GET $url_webapp/deploy_to_production/ --no-progress-meter 
