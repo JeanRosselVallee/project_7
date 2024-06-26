@@ -10,5 +10,6 @@ modeling/data/in
 file_editor.ipynb
 config_private.json
 nohup.out
-modeling/mlruns/0
+modeling/mlruns/[0-9]*
+modeling/mlruns/.trash
 test_api/mlruns/
