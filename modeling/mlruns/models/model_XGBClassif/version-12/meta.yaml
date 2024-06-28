@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1719523882864
+current_stage: None
+description: null
+last_updated_timestamp: 1719523882864
+name: model_XGBClassif
+run_id: 38d64fab7f7a45c5930978d65e5646b4
+run_link: null
+source: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/38d64fab7f7a45c5930978d65e5646b4/artifacts/run_XGBClassif_Default
+status: READY
+status_message: null
+storage_location: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/38d64fab7f7a45c5930978d65e5646b4/artifacts/run_XGBClassif_Default
+user_id: null
+version: 12

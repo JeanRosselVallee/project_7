@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1719523871451
+current_stage: None
+description: null
+last_updated_timestamp: 1719523871451
+name: model_DummyClass
+run_id: f9a91e3e0aff4d729d1774bf206ac91f
+run_link: null
+source: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/f9a91e3e0aff4d729d1774bf206ac91f/artifacts/run_DummyClass_Default
+status: READY
+status_message: null
+storage_location: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/f9a91e3e0aff4d729d1774bf206ac91f/artifacts/run_DummyClass_Default
+user_id: null
+version: 10

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1719525593135
+current_stage: None
+description: null
+last_updated_timestamp: 1719525593135
+name: model_<catboost.
+run_id: e821339696e5448b93670c7d5c76a1dc
+run_link: null
+source: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/e821339696e5448b93670c7d5c76a1dc/artifacts/run_<catboost._Default
+status: READY
+status_message: null
+storage_location: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/e821339696e5448b93670c7d5c76a1dc/artifacts/run_<catboost._Default
+user_id: null
+version: 11
