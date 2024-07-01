@@ -4,7 +4,7 @@ import subprocess
 import requests
 from flask import Flask, render_template, request
 from mlflow import sklearn as skl
-from sklearn.metrics import recall_score, roc_auc_score
+from sklearn.metrics import recall_score, roc_auc_score, confusion_matrix
 
 # **************************************************** FUNCTIONS ************************
 def run_shell(command) :
@@ -34,6 +34,11 @@ def copy_model() :
 def send_email(str_body) :
     shell_command = 'echo "' + str_body + '" | mailx -s "Model Performance Decay" jv.virtualm@gmail.com'
     subprocess.getoutput(shell_command)
+def get_score_business(y_true, y_pred):
+    [[TN, FP], [FN, TP]] = confusion_matrix(y_true, y_pred)
+    cost_business = (FP + 10*FN) / 116 / (FN + TP)
+    score_business = 1 - cost_business
+    return score_business
 
 # **************************************************** FLASK APP *********************
 app = Flask(__name__)                                     
@@ -79,7 +84,7 @@ def report_simul() : return render_template('report_simulation.html')
 
 @app.route('/alert_score/', methods=['POST'])             # Route Alert Low Score
 def alert_score() :    
-    alert_threshold = 0.6
+    alert_threshold = 0.85
     dict_response = request.json                                 # Data extraction
     df_X = pd.DataFrame(data    = dict_response['dataframe_split']['data'], 
                         columns = dict_response['dataframe_split']['columns'])
@@ -92,13 +97,16 @@ def alert_score() :
     df_X['prediction'] = pd.Series(np_y_pred)
     df_X.to_csv ('../modeling/data/out/api_observations.csv')     # Backup    
     df_X.to_html('../website/templates/api_observations.html')
-    
-    score_auc    = roc_auc_score(ser_y, np_y_pred)               # Score
-    score_recall = recall_score( ser_y, np_y_pred) 
-    str_score = 'Score AUC   = ' + str(score_auc.round(4))
-    if score_auc < alert_threshold : 
-        send_email('alert_score(): ' + str_score)
-    return str_score + '\nScore Recall= ' + str(score_recall.round(4))
+
+    score_business = get_score_business(ser_y, np_y_pred)         # Score
+    str_score =  'Score Business = ' + str(score_business.round(4))
+    if score_business < alert_threshold : 
+        send_email('alert_score(): ' + str_score
+    score_auc      = roc_auc_score (ser_y, np_y_pred)
+    score_accuracy = accuracy_score(ser_y, np_y_pred) 
+    str_score += '\nScore AUC     = ' + str(score_auc     .round(4))
+    str_score += '\nScore Accuracy= ' + str(score_accuracy.round(4))
+    return str_score
     
 @app.route('/backup/')                                     # Route View Backup
 def backup_csv() : 

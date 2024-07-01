@@ -1,1 +1,1 @@
-[long, double, double, long, long, long, long]
+[long, long, double, long, double, boolean, long]
