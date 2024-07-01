@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1719611628970
+current_stage: None
+description: null
+last_updated_timestamp: 1719611628970
+name: model_XGB_proba
+run_id: 06c2e5f92c7043f0bbaa04584325e54c
+run_link: null
+source: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/06c2e5f92c7043f0bbaa04584325e54c/artifacts/run_XGB_proba_Gross
+status: READY
+status_message: null
+storage_location: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/06c2e5f92c7043f0bbaa04584325e54c/artifacts/run_XGB_proba_Gross
+user_id: null
+version: 40

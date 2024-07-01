@@ -5,5 +5,5 @@
     "port_production": "5678",
     "port_jupyter": "5555",
     "port_flask": "6543",
-    "best_threshold": "0.07914637"
+    "best_threshold": "0.09"
 }
