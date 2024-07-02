@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1719927693518
+current_stage: None
+description: null
+last_updated_timestamp: 1719927693518
+name: model_LGBMClassi
+run_id: 3886350c260442b2ad8a515428118650
+run_link: null
+source: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/3886350c260442b2ad8a515428118650/artifacts/run_LGBMClassi_Default
+status: READY
+status_message: null
+storage_location: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/3886350c260442b2ad8a515428118650/artifacts/run_LGBMClassi_Default
+user_id: null
+version: 19

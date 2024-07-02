@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/4cab3e5ab55d471486811fefd70608e5/artifacts
+end_time: 1719949575802
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: 4cab3e5ab55d471486811fefd70608e5
+run_name: bold-sow-428
+run_uuid: 4cab3e5ab55d471486811fefd70608e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719949570614
+status: 3
+tags: []
+user_id: user_n

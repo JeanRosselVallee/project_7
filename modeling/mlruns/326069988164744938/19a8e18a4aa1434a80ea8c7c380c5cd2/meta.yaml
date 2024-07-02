@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/19a8e18a4aa1434a80ea8c7c380c5cd2/artifacts
+end_time: 1719936355434
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: 19a8e18a4aa1434a80ea8c7c380c5cd2
+run_name: traveling-duck-121
+run_uuid: 19a8e18a4aa1434a80ea8c7c380c5cd2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719936355423
+status: 4
+tags: []
+user_id: user_n

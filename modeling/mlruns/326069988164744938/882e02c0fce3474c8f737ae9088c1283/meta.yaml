@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/882e02c0fce3474c8f737ae9088c1283/artifacts
+end_time: 1719927847786
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: 882e02c0fce3474c8f737ae9088c1283
+run_name: run_LGBMClassi_Default
+run_uuid: 882e02c0fce3474c8f737ae9088c1283
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719927780029
+status: 3
+tags: []
+user_id: user_n

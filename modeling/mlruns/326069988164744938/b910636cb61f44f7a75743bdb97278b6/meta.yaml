@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/b910636cb61f44f7a75743bdb97278b6/artifacts
+end_time: 1719927612770
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: b910636cb61f44f7a75743bdb97278b6
+run_name: run_DummyClass_Default
+run_uuid: b910636cb61f44f7a75743bdb97278b6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719927608470
+status: 3
+tags: []
+user_id: user_n

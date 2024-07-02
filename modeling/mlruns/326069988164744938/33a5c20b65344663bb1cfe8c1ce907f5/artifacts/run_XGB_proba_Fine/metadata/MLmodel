@@ -1,0 +1,20 @@
+artifact_path: run_XGB_proba_Fine
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.0
+mlflow_version: 2.14.1
+model_size_bytes: 74367
+model_uuid: 5395cea7dfc24c038bb200e54652d06e
+run_id: 33a5c20b65344663bb1cfe8c1ce907f5
+utc_time_created: '2024-07-02 21:39:50.215938'

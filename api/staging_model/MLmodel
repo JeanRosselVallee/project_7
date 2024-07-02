@@ -13,15 +13,15 @@ flavors:
     serialization_format: cloudpickle
     sklearn_version: 1.5.0
 mlflow_version: 2.14.1
-model_size_bytes: 59287
-model_uuid: 5899a8d5f8614ac385d0a7af13b126a6
+model_size_bytes: 74473
+model_uuid: 65d62d754f3148e8a88f659ffc09ca9c
 signature:
   inputs: '[{"type": "long", "name": "CODE_GENDER_M", "required": true}, {"type":
-    "long", "name": "NAME_CONTRACT_TYPE_Cash_loans", "required": true}, {"type": "double",
-    "name": "EXT_SOURCE_3", "required": true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Higher_education",
-    "required": true}, {"type": "double", "name": "EXT_SOURCE_2", "required": true},
-    {"type": "boolean", "name": "FLAG_OWN_CAR", "required": true}, {"type": "long",
-    "name": "NAME_EDUCATION_TYPE_Secondary_or_secondary_special", "required": true}]'
+    "double", "name": "EXT_SOURCE_3", "required": true}, {"type": "double", "name":
+    "EXT_SOURCE_2", "required": true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Secondary_or_secondary_special",
+    "required": true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Higher_education",
+    "required": true}, {"type": "long", "name": "NAME_CONTRACT_TYPE_Cash_loans", "required":
+    true}, {"type": "long", "name": "NAME_INCOME_TYPE_Working", "required": true}]'
   outputs: '[{"type": "long", "name": "TARGET", "required": true}]'
   params: null
-utc_time_created: '2024-07-01 07:59:33.319954'
+utc_time_created: '2024-07-02 21:53:48.999333'

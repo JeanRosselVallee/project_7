@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/552bd9d428934a7f97dd8b7289ce423e/artifacts
+end_time: 1719958323226
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: 552bd9d428934a7f97dd8b7289ce423e
+run_name: rogue-steed-951
+run_uuid: 552bd9d428934a7f97dd8b7289ce423e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719958320237
+status: 3
+tags: []
+user_id: user_n

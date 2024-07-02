@@ -1,0 +1,29 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.10.12
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: __main__.XGB_proba
+    model_format: xgb
+    xgb_version: 2.1.0
+mlflow_version: 2.14.1
+model_size_bytes: 69342
+model_uuid: cb09cb01c12641f8b1c59d88725fef58
+run_id: 33a5c20b65344663bb1cfe8c1ce907f5
+signature:
+  inputs: '[{"type": "long", "name": "CODE_GENDER_M", "required": true}, {"type":
+    "double", "name": "EXT_SOURCE_3", "required": true}, {"type": "double", "name":
+    "EXT_SOURCE_2", "required": true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Secondary_or_secondary_special",
+    "required": true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Higher_education",
+    "required": true}, {"type": "long", "name": "NAME_CONTRACT_TYPE_Cash_loans", "required":
+    true}, {"type": "long", "name": "NAME_INCOME_TYPE_Working", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-07-02 21:39:48.954544'

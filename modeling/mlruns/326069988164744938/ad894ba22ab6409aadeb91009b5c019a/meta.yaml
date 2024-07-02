@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/ad894ba22ab6409aadeb91009b5c019a/artifacts
+end_time: 1719936904178
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: ad894ba22ab6409aadeb91009b5c019a
+run_name: worried-shrike-665
+run_uuid: ad894ba22ab6409aadeb91009b5c019a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719936899074
+status: 3
+tags: []
+user_id: user_n

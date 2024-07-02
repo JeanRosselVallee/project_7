@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/afa20c0fa60f46bb836e35d8319789e7/artifacts
+end_time: 1719939403386
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: afa20c0fa60f46bb836e35d8319789e7
+run_name: likeable-asp-939
+run_uuid: afa20c0fa60f46bb836e35d8319789e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719939400081
+status: 3
+tags: []
+user_id: user_n

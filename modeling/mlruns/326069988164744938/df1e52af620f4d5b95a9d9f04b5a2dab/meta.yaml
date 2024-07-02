@@ -1,8 +1,9 @@
 artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/df1e52af620f4d5b95a9d9f04b5a2dab/artifacts
+deleted_time: 1719918322070
 end_time: 1719820598813
 entry_point_name: ''
 experiment_id: '326069988164744938'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: df1e52af620f4d5b95a9d9f04b5a2dab
 run_name: classy-ant-4
 run_uuid: df1e52af620f4d5b95a9d9f04b5a2dab

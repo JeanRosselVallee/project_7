@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/d02e17c38fa84c6f85f6a75a191f4560/artifacts
+end_time: 1719949506947
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: d02e17c38fa84c6f85f6a75a191f4560
+run_name: serious-shad-295
+run_uuid: d02e17c38fa84c6f85f6a75a191f4560
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719949501103
+status: 3
+tags: []
+user_id: user_n

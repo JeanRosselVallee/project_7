@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/56d03633f1e74b42bdc531cb660b0f1f/artifacts
+end_time: 1719949351263
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: 56d03633f1e74b42bdc531cb660b0f1f
+run_name: nebulous-fowl-185
+run_uuid: 56d03633f1e74b42bdc531cb660b0f1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719949346124
+status: 3
+tags: []
+user_id: user_n

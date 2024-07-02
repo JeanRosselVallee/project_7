@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/f1ed763f3f354d8bb58162f240c9f93c/artifacts
+end_time: 1719949667630
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: f1ed763f3f354d8bb58162f240c9f93c
+run_name: rebellious-fox-86
+run_uuid: f1ed763f3f354d8bb58162f240c9f93c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719949662452
+status: 3
+tags: []
+user_id: user_n
