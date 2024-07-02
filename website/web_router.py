@@ -4,7 +4,7 @@ import subprocess
 import requests
 from flask import Flask, render_template, request
 from mlflow import sklearn as skl
-from sklearn.metrics import recall_score, roc_auc_score, confusion_matrix
+from sklearn.metrics import roc_auc_score, accuracy_score, confusion_matrix
 
 # **************************************************** FUNCTIONS ************************
 def run_shell(command) :
@@ -84,7 +84,7 @@ def report_simul() : return render_template('report_simulation.html')
 
 @app.route('/alert_score/', methods=['POST'])             # Route Alert Low Score
 def alert_score() :    
-    alert_threshold = 0.85
+    alert_threshold = 0.937  # Last_best_score=0.939
     dict_response = request.json                                 # Data extraction
     df_X = pd.DataFrame(data    = dict_response['dataframe_split']['data'], 
                         columns = dict_response['dataframe_split']['columns'])
@@ -99,13 +99,13 @@ def alert_score() :
     df_X.to_html('../website/templates/api_observations.html')
 
     score_business = get_score_business(ser_y, np_y_pred)         # Score
-    str_score =  'Score Business = ' + str(score_business.round(4))
+    score_auc      = roc_auc_score     (ser_y, np_y_pred)
+    score_accuracy = accuracy_score    (ser_y, np_y_pred) 
+    str_score  = '\nScore Business = ' + str(round(score_business, 4))
+    str_score += '\nScore AUC      = ' + str(round(score_auc     , 4))
+    str_score += '\nScore Accuracy = ' + str(round(score_accuracy, 4))
     if score_business < alert_threshold : 
-        send_email('alert_score(): ' + str_score
-    score_auc      = roc_auc_score (ser_y, np_y_pred)
-    score_accuracy = accuracy_score(ser_y, np_y_pred) 
-    str_score += '\nScore AUC     = ' + str(score_auc     .round(4))
-    str_score += '\nScore Accuracy= ' + str(score_accuracy.round(4))
+        send_email('Alert: Score Business under threshold of ' + str(alert_threshold) + str_score)
     return str_score
     
 @app.route('/backup/')                                     # Route View Backup
