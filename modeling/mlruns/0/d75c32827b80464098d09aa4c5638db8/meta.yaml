@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/d75c32827b80464098d09aa4c5638db8/artifacts
+deleted_time: 1719411310571
+end_time: 1719166595736
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: d75c32827b80464098d09aa4c5638db8
+run_name: gentle-ant-338
+run_uuid: d75c32827b80464098d09aa4c5638db8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719166593201
+status: 3
+tags: []
+user_id: user_n

@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/231d1e055b944c6fa92798564a2f3f00/artifacts
+deleted_time: 1719914021150
+end_time: 1719763797683
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: deleted
+run_id: 231d1e055b944c6fa92798564a2f3f00
+run_name: run_XGBClassif_Mid
+run_uuid: 231d1e055b944c6fa92798564a2f3f00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719763749729
+status: 3
+tags: []
+user_id: user_n

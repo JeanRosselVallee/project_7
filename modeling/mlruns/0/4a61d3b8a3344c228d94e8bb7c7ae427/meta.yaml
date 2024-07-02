@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/4a61d3b8a3344c228d94e8bb7c7ae427/artifacts
+deleted_time: 1719411310525
+end_time: 1719219942594
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 4a61d3b8a3344c228d94e8bb7c7ae427
+run_name: languid-roo-560
+run_uuid: 4a61d3b8a3344c228d94e8bb7c7ae427
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219939052
+status: 3
+tags: []
+user_id: user_n

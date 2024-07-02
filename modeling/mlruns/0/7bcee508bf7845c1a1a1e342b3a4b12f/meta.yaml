@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/7bcee508bf7845c1a1a1e342b3a4b12f/artifacts
+deleted_time: 1719411310555
+end_time: 1719219128941
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7bcee508bf7845c1a1a1e342b3a4b12f
+run_name: debonair-newt-402
+run_uuid: 7bcee508bf7845c1a1a1e342b3a4b12f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219128927
+status: 4
+tags: []
+user_id: user_n

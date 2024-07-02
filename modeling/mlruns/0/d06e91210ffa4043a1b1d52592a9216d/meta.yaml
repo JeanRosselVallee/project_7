@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/d06e91210ffa4043a1b1d52592a9216d/artifacts
+deleted_time: 1719411310509
+end_time: 1719386453796
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: d06e91210ffa4043a1b1d52592a9216d
+run_name: luxuriant-tern-331
+run_uuid: d06e91210ffa4043a1b1d52592a9216d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719386451169
+status: 3
+tags: []
+user_id: user_n

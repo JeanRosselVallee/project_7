@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/b4e0a1050cf04f4fbb23bd4db05194c9/artifacts
+end_time: 1719781704500
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: b4e0a1050cf04f4fbb23bd4db05194c9
+run_name: run_<catboost._Default
+run_uuid: b4e0a1050cf04f4fbb23bd4db05194c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719781628602
+status: 3
+tags: []
+user_id: user_n

@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/39afdc4fe41e4416a161563f8ebcf81c/artifacts
+deleted_time: 1719411310569
+end_time: 1719218641053
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 39afdc4fe41e4416a161563f8ebcf81c
+run_name: wistful-pug-547
+run_uuid: 39afdc4fe41e4416a161563f8ebcf81c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719218562813
+status: 3
+tags: []
+user_id: user_n

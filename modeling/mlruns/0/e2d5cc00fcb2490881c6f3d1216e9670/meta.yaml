@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/e2d5cc00fcb2490881c6f3d1216e9670/artifacts
+deleted_time: 1719411310546
+end_time: 1719219737180
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: e2d5cc00fcb2490881c6f3d1216e9670
+run_name: victorious-chimp-426
+run_uuid: e2d5cc00fcb2490881c6f3d1216e9670
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219737160
+status: 3
+tags: []
+user_id: user_n

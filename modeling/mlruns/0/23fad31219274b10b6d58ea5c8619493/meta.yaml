@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/23fad31219274b10b6d58ea5c8619493/artifacts
+deleted_time: 1719411310511
+end_time: 1719222283336
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 23fad31219274b10b6d58ea5c8619493
+run_name: worried-sheep-24
+run_uuid: 23fad31219274b10b6d58ea5c8619493
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719222280627
+status: 3
+tags: []
+user_id: user_n

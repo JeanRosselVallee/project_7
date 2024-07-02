@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/703f7cc588d640cd81c422acf08a5c63/artifacts
+deleted_time: 1719411310558
+end_time: 1719219077063
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 703f7cc588d640cd81c422acf08a5c63
+run_name: marvelous-mink-108
+run_uuid: 703f7cc588d640cd81c422acf08a5c63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219075239
+status: 3
+tags: []
+user_id: user_n

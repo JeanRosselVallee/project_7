@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/0c251d071b8c46edb8a16ddbcf2225a7/artifacts
+end_time: 1719781535822
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: active
+run_id: 0c251d071b8c46edb8a16ddbcf2225a7
+run_name: run_XGBClassif_Default
+run_uuid: 0c251d071b8c46edb8a16ddbcf2225a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719781521641
+status: 3
+tags: []
+user_id: user_n

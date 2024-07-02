@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/d31afe61436a45548ea8ab788e4dc894/artifacts
+deleted_time: 1719411310525
+end_time: 1719220203283
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: d31afe61436a45548ea8ab788e4dc894
+run_name: trusting-auk-873
+run_uuid: d31afe61436a45548ea8ab788e4dc894
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719220200751
+status: 3
+tags: []
+user_id: user_n

@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/df471846a0634609a1fe8d2d2e0df07d/artifacts
+deleted_time: 1719411310530
+end_time: 1719219892961
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: df471846a0634609a1fe8d2d2e0df07d
+run_name: handsome-turtle-593
+run_uuid: df471846a0634609a1fe8d2d2e0df07d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219891780
+status: 3
+tags: []
+user_id: user_n

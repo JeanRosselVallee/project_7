@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/a94c2d122bc64ca68fa5f7fa650a4bf2/artifacts
+deleted_time: 1719411310518
+end_time: 1719220454196
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: a94c2d122bc64ca68fa5f7fa650a4bf2
+run_name: gifted-moth-540
+run_uuid: a94c2d122bc64ca68fa5f7fa650a4bf2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719220453019
+status: 3
+tags: []
+user_id: user_n

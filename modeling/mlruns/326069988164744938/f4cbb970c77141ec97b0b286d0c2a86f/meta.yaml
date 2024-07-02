@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/f4cbb970c77141ec97b0b286d0c2a86f/artifacts
+deleted_time: 1719914021128
+end_time: 1719780721435
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: deleted
+run_id: f4cbb970c77141ec97b0b286d0c2a86f
+run_name: run_XGB_proba_Mid
+run_uuid: f4cbb970c77141ec97b0b286d0c2a86f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719780658130
+status: 3
+tags: []
+user_id: user_n

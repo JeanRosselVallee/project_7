@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/331848523af74d9fbfe61d535a647546/artifacts
+deleted_time: 1719411310578
+end_time: 1719166448878
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 331848523af74d9fbfe61d535a647546
+run_name: suave-mule-438
+run_uuid: 331848523af74d9fbfe61d535a647546
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719166448556
+status: 3
+tags: []
+user_id: user_n

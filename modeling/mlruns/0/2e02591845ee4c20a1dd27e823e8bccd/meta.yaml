@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/2e02591845ee4c20a1dd27e823e8bccd/artifacts
+deleted_time: 1719411310551
+end_time: 1719219283961
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 2e02591845ee4c20a1dd27e823e8bccd
+run_name: wise-bear-885
+run_uuid: 2e02591845ee4c20a1dd27e823e8bccd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219281511
+status: 3
+tags: []
+user_id: user_n

@@ -1,0 +1,13 @@
+digest: 7bbdc63c
+name: dataset
+profile: '{"num_rows": 48678, "num_elements": 340746}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "CODE_GENDER_M", "required":
+  true}, {"type": "long", "name": "NAME_CONTRACT_TYPE_Cash_loans", "required": true},
+  {"type": "double", "name": "EXT_SOURCE_3", "required": true}, {"type": "long", "name":
+  "NAME_EDUCATION_TYPE_Higher_education", "required": true}, {"type": "double", "name":
+  "EXT_SOURCE_2", "required": true}, {"type": "boolean", "name": "FLAG_OWN_CAR", "required":
+  true}, {"type": "long", "name": "NAME_EDUCATION_TYPE_Secondary_or_secondary_special",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "user_n", "mlflow.source.name": "/home/user_n/anaconda3/envs/env_proj_7/lib/python3.10/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

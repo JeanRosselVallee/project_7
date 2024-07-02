@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/7a8d5a6e816d4177b48e4ce5f81aac05/artifacts
+deleted_time: 1719411310524
+end_time: 1719220282112
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7a8d5a6e816d4177b48e4ce5f81aac05
+run_name: adorable-owl-905
+run_uuid: 7a8d5a6e816d4177b48e4ce5f81aac05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719220279709
+status: 3
+tags: []
+user_id: user_n

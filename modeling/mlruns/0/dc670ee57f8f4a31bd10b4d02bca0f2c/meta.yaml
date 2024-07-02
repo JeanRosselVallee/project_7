@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/dc670ee57f8f4a31bd10b4d02bca0f2c/artifacts
+deleted_time: 1719411310578
+end_time: 1719165141022
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: dc670ee57f8f4a31bd10b4d02bca0f2c
+run_name: beautiful-shrimp-412
+run_uuid: dc670ee57f8f4a31bd10b4d02bca0f2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719165140729
+status: 3
+tags: []
+user_id: user_n

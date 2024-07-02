@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/326069988164744938/0ecd1a1258f24b97857b1a7460b3e6bc/artifacts
+deleted_time: 1719914021140
+end_time: 1719778678107
+entry_point_name: ''
+experiment_id: '326069988164744938'
+lifecycle_stage: deleted
+run_id: 0ecd1a1258f24b97857b1a7460b3e6bc
+run_name: run_XGB_proba_Gross
+run_uuid: 0ecd1a1258f24b97857b1a7460b3e6bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719778625445
+status: 3
+tags: []
+user_id: user_n

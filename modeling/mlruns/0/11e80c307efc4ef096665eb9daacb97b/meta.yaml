@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/11e80c307efc4ef096665eb9daacb97b/artifacts
+deleted_time: 1719411310538
+end_time: 1719219762802
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 11e80c307efc4ef096665eb9daacb97b
+run_name: beautiful-sponge-485
+run_uuid: 11e80c307efc4ef096665eb9daacb97b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219762782
+status: 3
+tags: []
+user_id: user_n

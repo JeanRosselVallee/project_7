@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/ed37e48e5eb94b9481114386841ceb83/artifacts
+deleted_time: 1719411310518
+end_time: 1719220416461
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: ed37e48e5eb94b9481114386841ceb83
+run_name: unruly-frog-223
+run_uuid: ed37e48e5eb94b9481114386841ceb83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719220415288
+status: 3
+tags: []
+user_id: user_n

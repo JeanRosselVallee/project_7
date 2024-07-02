@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/3d3b86b962c94ddcbbef051278eb2302/artifacts
+deleted_time: 1719411310549
+end_time: 1719219145601
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 3d3b86b962c94ddcbbef051278eb2302
+run_name: likeable-sheep-27
+run_uuid: 3d3b86b962c94ddcbbef051278eb2302
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219143648
+status: 3
+tags: []
+user_id: user_n

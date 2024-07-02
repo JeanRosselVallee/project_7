@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/e71272ab060e4e46810415603ded9686/artifacts
+deleted_time: 1719411310572
+end_time: 1719166806430
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: e71272ab060e4e46810415603ded9686
+run_name: puzzled-shoat-1
+run_uuid: e71272ab060e4e46810415603ded9686
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719166803547
+status: 3
+tags: []
+user_id: user_n

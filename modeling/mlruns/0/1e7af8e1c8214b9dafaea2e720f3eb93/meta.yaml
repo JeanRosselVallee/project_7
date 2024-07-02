@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/1e7af8e1c8214b9dafaea2e720f3eb93/artifacts
+deleted_time: 1719411310558
+end_time: 1719218725522
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 1e7af8e1c8214b9dafaea2e720f3eb93
+run_name: bold-kite-38
+run_uuid: 1e7af8e1c8214b9dafaea2e720f3eb93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719218721825
+status: 3
+tags: []
+user_id: user_n

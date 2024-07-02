@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/cae87bab2ff64a85b6e7672f9e66f473/artifacts
+deleted_time: 1719411310564
+end_time: 1719218694026
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: cae87bab2ff64a85b6e7672f9e66f473
+run_name: luxuriant-stag-734
+run_uuid: cae87bab2ff64a85b6e7672f9e66f473
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719218692994
+status: 3
+tags: []
+user_id: user_n

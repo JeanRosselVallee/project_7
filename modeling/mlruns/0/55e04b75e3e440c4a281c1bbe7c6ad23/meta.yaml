@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/55e04b75e3e440c4a281c1bbe7c6ad23/artifacts
+deleted_time: 1719411310546
+end_time: 1719219718941
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 55e04b75e3e440c4a281c1bbe7c6ad23
+run_name: spiffy-shrike-194
+run_uuid: 55e04b75e3e440c4a281c1bbe7c6ad23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219442555
+status: 3
+tags: []
+user_id: user_n

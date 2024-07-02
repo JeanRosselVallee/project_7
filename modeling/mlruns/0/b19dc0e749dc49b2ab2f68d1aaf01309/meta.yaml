@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/b19dc0e749dc49b2ab2f68d1aaf01309/artifacts
+deleted_time: 1719411310532
+end_time: 1719219875971
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: b19dc0e749dc49b2ab2f68d1aaf01309
+run_name: invincible-vole-33
+run_uuid: b19dc0e749dc49b2ab2f68d1aaf01309
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219875948
+status: 3
+tags: []
+user_id: user_n

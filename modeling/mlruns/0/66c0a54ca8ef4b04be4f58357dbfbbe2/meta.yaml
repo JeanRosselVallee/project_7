@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/66c0a54ca8ef4b04be4f58357dbfbbe2/artifacts
+deleted_time: 1719411310538
+end_time: 1719219801987
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 66c0a54ca8ef4b04be4f58357dbfbbe2
+run_name: spiffy-hawk-684
+run_uuid: 66c0a54ca8ef4b04be4f58357dbfbbe2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219801965
+status: 3
+tags: []
+user_id: user_n

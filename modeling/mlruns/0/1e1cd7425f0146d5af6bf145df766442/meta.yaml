@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/1e1cd7425f0146d5af6bf145df766442/artifacts
+deleted_time: 1719411310546
+end_time: 1719219737156
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 1e1cd7425f0146d5af6bf145df766442
+run_name: placid-gnat-593
+run_uuid: 1e1cd7425f0146d5af6bf145df766442
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219718944
+status: 3
+tags: []
+user_id: user_n

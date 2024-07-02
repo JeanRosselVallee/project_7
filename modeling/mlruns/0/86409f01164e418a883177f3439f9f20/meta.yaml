@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/86409f01164e418a883177f3439f9f20/artifacts
+deleted_time: 1719411310531
+end_time: 1719219821627
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 86409f01164e418a883177f3439f9f20
+run_name: amusing-mole-774
+run_uuid: 86409f01164e418a883177f3439f9f20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719219821605
+status: 3
+tags: []
+user_id: user_n

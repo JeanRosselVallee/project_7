@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/6f1cfe4bc8ae46be827ccb9766041b05/artifacts
+deleted_time: 1719411310557
+end_time: 1719218748257
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 6f1cfe4bc8ae46be827ccb9766041b05
+run_name: burly-crab-535
+run_uuid: 6f1cfe4bc8ae46be827ccb9766041b05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719218745692
+status: 3
+tags: []
+user_id: user_n

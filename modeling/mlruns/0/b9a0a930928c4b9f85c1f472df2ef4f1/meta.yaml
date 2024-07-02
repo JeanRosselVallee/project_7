@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/b9a0a930928c4b9f85c1f472df2ef4f1/artifacts
+deleted_time: 1719411310509
+end_time: 1719386691809
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: b9a0a930928c4b9f85c1f472df2ef4f1
+run_name: amazing-vole-121
+run_uuid: b9a0a930928c4b9f85c1f472df2ef4f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719386686795
+status: 3
+tags: []
+user_id: user_n

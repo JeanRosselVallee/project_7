@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/fa5f403df4ab4eb2b1d4d2b89b07c1b7/artifacts
+deleted_time: 1719411310516
+end_time: 1719220466014
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: fa5f403df4ab4eb2b1d4d2b89b07c1b7
+run_name: unleashed-deer-143
+run_uuid: fa5f403df4ab4eb2b1d4d2b89b07c1b7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719220463300
+status: 3
+tags: []
+user_id: user_n

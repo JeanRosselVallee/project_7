@@ -1,0 +1,16 @@
+artifact_uri: file:///home/user_n/Documents/Dev/git/project_7/modeling/mlruns/0/b39de60571db454a9b586e0484c5bd68/artifacts
+deleted_time: 1719411310555
+end_time: 1719218792889
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: b39de60571db454a9b586e0484c5bd68
+run_name: enthused-ram-723
+run_uuid: b39de60571db454a9b586e0484c5bd68
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719218790490
+status: 3
+tags: []
+user_id: user_n
