@@ -4,14 +4,14 @@ import pandas as pd
 import json
 
 def test_predict():
-    dict_inputs = {"index": [2291, 2292, 2293], "columns": ["CODE_GENDER_M", "NAME_CONTRACT_TYPE_Cash_loans", "EXT_SOURCE_3", "NAME_EDUCATION_TYPE_Higher_education", "EXT_SOURCE_2", "FLAG_OWN_CAR", "NAME_EDUCATION_TYPE_Secondary_or_secondary_special"], "data": [[1, 1, 0.4740512892789932, 0, 0.3147092250216505, False, 1], [0, 1, 0.1595195404777181, 1, 0.3225519037906617, True, 0], [0, 1, 0.1261005588362325, 0, 0.3007587165928464, False, 1]]}                  # input observations      
+    dict_inputs = {"index": [2355, 2356, 2357], "columns": ["CODE_GENDER_M", "EXT_SOURCE_3", "EXT_SOURCE_2", "NAME_EDUCATION_TYPE_Secondary_or_secondary_special", "NAME_EDUCATION_TYPE_Higher_education", "NAME_CONTRACT_TYPE_Cash_loans", "NAME_INCOME_TYPE_Working"], "data": [[0, 0.2188590822283744, 0.5886784110239339, 1, 0, 1, 1], [1, 0.5108529061799658, 0.3679405554386685, 1, 0, 1, 1], [0, 0.0701088438273582, 0.0301835652520893, 0, 1, 1, 0]]}                  # input observations      
     df_result_grid = pd.DataFrame(data=dict_inputs['data'], columns=dict_inputs['columns'])
     df_result_grid['target'] = [1, 1, 1]      # expected output
 
     # Send input data to prediction API via POST request 
     req_post = requests.post(   url     = 'http://4.233.201.217:5677/invocations', 
                                 headers = {'Content-Type': 'application/json'}, 
-                                data    = '{"dataframe_split": {"index": [2291, 2292, 2293], "columns": ["CODE_GENDER_M", "NAME_CONTRACT_TYPE_Cash_loans", "EXT_SOURCE_3", "NAME_EDUCATION_TYPE_Higher_education", "EXT_SOURCE_2", "FLAG_OWN_CAR", "NAME_EDUCATION_TYPE_Secondary_or_secondary_special"], "data": [[1, 1, 0.4740512892789932, 0, 0.3147092250216505, false, 1], [0, 1, 0.1595195404777181, 1, 0.3225519037906617, true, 0], [0, 1, 0.1261005588362325, 0, 0.3007587165928464, false, 1]]} }' )
+                                data    = '{"dataframe_split": {"index": [2355, 2356, 2357], "columns": ["CODE_GENDER_M", "EXT_SOURCE_3", "EXT_SOURCE_2", "NAME_EDUCATION_TYPE_Secondary_or_secondary_special", "NAME_EDUCATION_TYPE_Higher_education", "NAME_CONTRACT_TYPE_Cash_loans", "NAME_INCOME_TYPE_Working"], "data": [[0, 0.2188590822283744, 0.5886784110239339, 1, 0, 1, 1], [1, 0.5108529061799658, 0.3679405554386685, 1, 0, 1, 1], [0, 0.0701088438273582, 0.0301835652520893, 0, 1, 1, 0]]} }' )
     
     dict_predicted = json.loads(req_post.text)  # output predictions {'predictions': [1, 1, 1]}
 

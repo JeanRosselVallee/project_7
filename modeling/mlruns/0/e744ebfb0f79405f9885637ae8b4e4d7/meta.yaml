@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/e744ebfb0f79405f9885637ae8b4e4d7/artifacts
+end_time: 1719346830424
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e744ebfb0f79405f9885637ae8b4e4d7
+run_name: adorable-bird-500
+run_uuid: e744ebfb0f79405f9885637ae8b4e4d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719346830333
+status: 3
+tags: []
+user_id: jvisa4031
