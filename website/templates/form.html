@@ -27,7 +27,7 @@
                 <tr>
                     <td><label for="input_2">NAME_CONTRACT_TYPE_Cash_loans :</label></td>
                     <td><input name="NAME_CONTRACT_TYPE_Cash_loans" id="input_2" type="number" step="any" value="1"></td>
-                    <td>double</td>
+                    <td>long</td>
                 </tr>     
                 <tr>
                     <td><label for="input_3">EXT_SOURCE_3 :</label></td>
@@ -42,12 +42,12 @@
                 <tr>
                     <td><label for="input_5">EXT_SOURCE_2 :</label></td>
                     <td><input name="EXT_SOURCE_2" id="input_5" type="number" step="any" value="1"></td>
-                    <td>long</td>
+                    <td>double</td>
                 </tr>     
                 <tr>
                     <td><label for="input_6">FLAG_OWN_CAR :</label></td>
                     <td><input name="FLAG_OWN_CAR" id="input_6" type="number" step="any" value="1"></td>
-                    <td>long</td>
+                    <td>boolean</td>
                 </tr>     
                 <tr>
                     <td><label for="input_7">NAME_EDUCATION_TYPE_Secondary_or_secondary_special :</label></td>
@@ -60,6 +60,8 @@
                 <button>Predict</button>
             </div>
         </form>
+        <br>
+        <a href="/">Retour à l'accueil</a>
         <br>
         <p>Observations de Classe 1 (mauvais emprunteur) - TP (vrai positif):</p>
         <table class="dataframe">
