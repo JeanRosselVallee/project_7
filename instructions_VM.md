@@ -85,6 +85,11 @@ On Browser
 - First connection :http://4.233.201.217:5555/tree?token=####
 - [List of notebooks](http://4.233.201.217:5555/tree)
 
+#### Récupérer token
+```
+jupyter notebook list
+```
+
 ### SSH Tunnels
 ```
 # Jupyter
