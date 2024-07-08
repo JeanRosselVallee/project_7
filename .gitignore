@@ -3,7 +3,7 @@
 *.log
 *.zip
 production_model
-run_<catboost._Default
+*/run_<catboost._Default
 catboost_info
 modeling/data/out/*[1-4].csv
 modeling/data/in
