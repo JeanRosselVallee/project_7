@@ -3,7 +3,7 @@
 *.log
 *.zip
 production_model
-catboost
+<catboost
 catboost_info
 modeling/data/out/*[1-4].csv
 modeling/data/in
